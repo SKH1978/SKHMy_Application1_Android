@@ -41,15 +41,15 @@
         android:text="Date  w.e.f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:text="Date upto"
         app:layout_constraintStart_toStartOf="@+id/textView1"
@@ -57,43 +57,38 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="296dp"
-        android:layout_height="40dp"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
         android:text="Calculate DAYS"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="49dp" />
+        app:layout_constraintGuide_begin="41dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:text="Date w.e.f"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView1"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:text="Date START"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="41dp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:text="Date UpTo"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:text="Date End"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        tools:layout_editor_absoluteY="98dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
